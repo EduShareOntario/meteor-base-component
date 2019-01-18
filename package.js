@@ -46,7 +46,7 @@ Package.onTest(function (api) {
 
   // Internal dependencies.
   api.use([
-    'peerlibrary:base-component'
+    'edushareontario:base-component'
   ]);
 
   // 3rd party dependencies.
