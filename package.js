@@ -1,13 +1,13 @@
 Package.describe({
-  name: 'peerlibrary:base-component',
-  summary: "Base component for reusable Meteor components",
-  version: '0.16.0',
-  git: 'https://github.com/peerlibrary/meteor-base-component.git',
+  name: 'edushareontario:base-component',
+  summary: "Base component for reusable Meteor components, with Coffeescript2 compatible dependencies!",
+  version: '0.16.1',
+  git: 'https://github.com/edushareontario/meteor-base-component.git',
   documentation: null
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('METEOR@1.0.3.1');
+  api.versionsFrom('METEOR@1.4.4.5');
 
   // Core dependencies.
   api.use([
@@ -20,8 +20,8 @@ Package.onUse(function (api) {
   // 3rd party dependencies.
   api.use([
     'peerlibrary:assert@0.2.5',
-    'peerlibrary:reactive-field@0.1.0',
-    'peerlibrary:computed-field@0.3.1'
+    'peerlibrary:reactive-field@0.5.0',
+    'peerlibrary:computed-field@0.9.0'
   ]);
 
   api.export('BaseComponent');
